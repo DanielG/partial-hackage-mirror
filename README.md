@@ -44,4 +44,6 @@ Dependencies
 
 - Debian / Ubuntu
 
-    apt-get install jq wget
+```
+apt-get install jq wget
+```
