@@ -21,8 +21,8 @@ desired.
 
 To use one of the hackage.haskell.org mirrors, if it's down:
 
-- `HACKAGE=http://objects-us-west-1.dream.io/hackage-mirror/ ./mirror-hackage.sh`
-- `HACKAGE=http://hackage.fpcomplete.com/ ./mirror-hackage.sh`
+- `HACKAGE=http://objects-us-west-1.dream.io/hackage-mirror ./mirror-hackage.sh`
+- `HACKAGE=http://hackage.fpcomplete.com ./mirror-hackage.sh`
 
 See https://hackage.haskell.org/mirros.json for more.
 
