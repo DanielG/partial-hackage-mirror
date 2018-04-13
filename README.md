@@ -16,7 +16,15 @@ HACKAGE=http://hackage.haskell.org DISTDIR=dist-newstyle/ OUTDIR=/tmp/mirror \
 ```
 
 here the environment variables `HACKAGE`, `DISTDIR` and `OUTDIR` are set to
-their default values, you may override them using the syntax above if desired.
+their default values, you may override them using the syntax above if
+desired.
+
+To use one of the hackage.haskell.org mirrors, if it's down:
+
+- `HACKAGE=http://objects-us-west-1.dream.io/hackage-mirror/ ./mirror-hackage.sh`
+- `HACKAGE=http://hackage.fpcomplete.com/ ./mirror-hackage.sh`
+
+See https://hackage.haskell.org/mirros.json for more.
 
 The script will read `$DISTDIR/cache/plan.json` to figure out the set of
 package-versions your current project needs. It then unifies this set with the
