@@ -2,7 +2,7 @@
 
 HACKAGE=${HACKAGE:-http://haskell.hackage.org}
 DISTDIR=${DISTDIR:-dist-newstyle/}
-OUTDIR=/tmp/mirror
+OUTDIR=${OUTDIR:-/tmp/mirror}
 NPROC=${NPROC:-8}
 
 IFS=
