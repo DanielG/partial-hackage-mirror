@@ -31,4 +31,4 @@ mkdir -p $OUTDIR/package
 # download packages
 cat $OUTDIR/package.list \
     | awk '{ print "package/" $1 "-" $2 ".tar.gz" }' \
-    | xargs -P$NPROC --verbose -n1 -- sh -c 'mkdir -p $(dirname $1); if [ ! -e "$1" ]; then wget -c -O $1 '$HACKAGE'/$1; fi' sh
+    | xargs -P$NPROC --verbose -n1 -r -- sh -c 'mkdir -p $(dirname $1); if [ ! -e "$1" ]; then wget -c -O $1 '$HACKAGE'/$1; fi' sh
