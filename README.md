@@ -37,7 +37,7 @@ repository my-mirror
 You can also create a fully fledged cabal config-file and override the global
 one by passing `--config-file=FILE` to all relevant `cabal` invocations. To
 create a default config file which you can use as a template, you can run
-`cabal --config-file=FILE` user-config init`.
+`cabal --config-file=FILE user-config init`.
 
 Dependencies
 ------------
