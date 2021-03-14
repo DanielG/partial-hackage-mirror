@@ -1,6 +1,6 @@
 #!/bin/sh
 
-HACKAGE=${HACKAGE:-http://haskell.hackage.org}
+HACKAGE=${HACKAGE:-http://hackage.haskell.org}
 DISTDIR=${DISTDIR:-dist-newstyle/}
 OUTDIR=${OUTDIR:-/tmp/mirror}
 NPROC=${NPROC:-8}
